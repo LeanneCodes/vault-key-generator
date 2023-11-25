@@ -53,6 +53,10 @@ button:hover {
     width: 60%;
 }
 
+.voted {
+    font-size: 22px;
+}
+
 /* guide */
 #guide {
     background-color: black;
@@ -84,7 +88,7 @@ button:hover {
 
 .number-align {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
 }
