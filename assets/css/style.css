@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+nav {
+    background-color: white;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+}
+
+/* header */
+.left {
+    background-color: #FFFBE8;
+    text-align: left;
+    min-height: 70vh;
+    padding: 50px 250px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bg-green {
+    background-color: #B7F4B1;
+    font-style: italic;
+    color: black;
+}
+
+.right {
+    background-color: #B7F4B1;
+    min-height: 70vh;
+}
+
+.hero-image {
+    width: 30%;
+    position: absolute;
+    right: 15%;
+    bottom: 19%;
+}
