@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+:root {
+    --cream: #FFFBE8;
+    --green: #B7F4B1;
+}
+
 /* navbar */
 nav {
     background-color: white;
@@ -16,29 +21,77 @@ button {
 
 /* header */
 .left {
-    background-color: #FFFBE8;
+    background-color: var(--cream);
     text-align: left;
     min-height: 70vh;
-    padding: 50px 250px 50px 100px;
+    padding: 100px 350px 100px 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.left h3 {
+    width: 80%;
 }
 
 .bg-green {
-    background-color: #B7F4B1;
+    background-color: var(--green);
     font-style: italic;
     color: black;
 }
 
 .right {
-    background-color: #B7F4B1;
+    background-color: var(--green);
     min-height: 70vh;
 }
 
 .hero-image {
     width: 30%;
     position: absolute;
-    right: 15%;
-    bottom: 19%;
+    right: 20%;
+    bottom: 25%;
+}
+
+.voted {
+    margin-bottom: -40px;
+}
+
+/* guide */
+#guide {
+    background-color: black;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 50px;
+    color: white;
+}
+
+.text-green {
+    color: var(--green);
+    letter-spacing: 2px;
+}
+
+.guide-header {
+    margin-top: -10px;
+}
+
+.number {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 65px;
+    color: black !important;
+    margin: 30px 0;
+}
+
+.number-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.description {
+    width: 90%;
 }
