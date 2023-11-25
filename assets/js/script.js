@@ -91,7 +91,7 @@ var specialCharacters = [
   // Function to prompt user for password options
   function getPasswordOptions() {
     // Prompt for password length
-    var length = parseInt(prompt("Enter the password length (between 8 and 128 characters inclusive):"));
+    var length = document.getElementById("length").value;
     console.log(length);
   
     // Check if the length is a valid number
@@ -111,16 +111,31 @@ var specialCharacters = [
       A series of confirm statements for the user to decide what
       type of characters they would like in their password.
     */
-    var specialChar = confirm("Would you like to include special characters?");
+    function getOptionValue(optionName) {
+        var optionValue;
+        var optionBtns = document.querySelectorAll('input[name="' + optionName + '"]');
+    
+        for (var i = 0; i < optionBtns.length; i++) {
+            if (optionBtns[i].type === "radio" && optionBtns[i].checked) {
+                var labelElement = document.querySelector('label[for="' + optionBtns[i].id + '"]');
+                console.log(optionBtns[i].id);
+                console.log(labelElement.textContent);
+                optionValue = labelElement.innerHTML.trim() === "Yes";
+                break;
+            }
+        }
+    
+        return optionValue;
+    }
+    
+    var specialChar = getOptionValue("special-char");
+    var numChar = getOptionValue("numbers");
+    var lowerChar = getOptionValue("lowercase");
+    var upperChar = getOptionValue("uppercase");
+    
     console.log(specialChar);
-  
-    var numChar = confirm("Would you like to include numeric characters?");
     console.log(numChar);
-  
-    var lowerChar = confirm("Would you like to include lowercase characters?");
     console.log(lowerChar);
-  
-    var upperChar = confirm("Would you like to include uppercase characters?");
     console.log(upperChar);
   
     // Check if at least one character type is selected
