@@ -144,3 +144,10 @@ button:hover {
     width: 100%;
     margin: auto;
 }
+
+/* footer */
+footer {
+    margin-top: 50px;
+    background-color: var(--green);
+    padding: 30px;
+}
