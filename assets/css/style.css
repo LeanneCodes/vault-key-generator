@@ -31,10 +31,7 @@ button:hover {
     background-color: var(--cream);
     text-align: left;
     min-height: 70vh;
-    padding: 100px 350px 100px 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    padding-left: 100px !important;
 }
 
 .left h3 {
@@ -53,14 +50,7 @@ button:hover {
 }
 
 .hero-image {
-    width: 30%;
-    position: absolute;
-    right: 20%;
-    bottom: 25%;
-}
-
-.voted {
-    margin-bottom: -40px;
+    width: 60%;
 }
 
 /* guide */
@@ -141,8 +131,14 @@ button:hover {
 }
 
 #generate {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px !important;
+    width: 30%;
     margin: auto;
+    height: 70px !important;
+    font-size: 30px;
 }
 
 /* footer */
