@@ -7,6 +7,7 @@
 :root {
     --cream: #FFFBE8;
     --green: #B7F4B1;
+    --grey: #e7e9eb;
 }
 
 /* navbar */
@@ -17,6 +18,12 @@ nav {
 button {
     width: 150px;
     height: 40px;
+}
+
+button:hover {
+    background-color: white !important;
+    border: 3px solid black;
+    color: black !important;
 }
 
 /* header */
@@ -93,5 +100,47 @@ button {
 }
 
 .description {
+    width: 70%;
+}
+
+/* generator */
+#generator {
     width: 90%;
+    margin: 50px auto;
+    border-radius: 20px;
+    border: 5px solid black;
+    min-height: 500px;
+    padding: 100px;
+}
+
+.input-style {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.input-style p, .input-style label {
+    font-size: 20px;
+}
+
+#password {
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 85px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+    resize: none;
+    overflow: hidden;
+}
+
+#generate {
+    width: 100%;
+    margin: auto;
 }

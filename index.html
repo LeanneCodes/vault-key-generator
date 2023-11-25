@@ -62,7 +62,7 @@
                         <div class="number">
                             <i class="fa-solid fa-2"></i>
                         </div>
-                        <p class="description">Choose if you want letters</p>
+                        <p class="description">Choose if you want special characters</p>
                     </div>
                     <div class="col number-align">
                         <div class="number">
@@ -82,19 +82,96 @@
                         </div>
                         <p class="description">Choose if you want uppercase</p>
                     </div>
-                    <div class="col number-align">
-                        <div class="number">
-                            <i class="fa-solid fa-6"></i>
-                        </div>
-                        <p class="description">Choose if you want special characters</p>
-                    </div>
                 </div>
+                <p class="text-green mt-4">You must choose a password length <span class="text-decoration-underline">and</span> at least one option</p>
             </div>
         </section>
 
         <!-- password generator -->
-        <section>
-
+        <section id="generator">
+            <div class="container-fluid">
+                <form action="">
+                    <div class="row">
+                        <div class="col input-style">
+                            <label for="length"><span class="fw-bold">Step 1:</span> Password length<br>(Between 8 and 280):</label><br>
+                            <input type="number" id="length" class="form-control w-75" name="length" min="8" max="280" step="1" required>
+                        </div>
+                        <div class="col input-style">
+                            <p><span class="fw-bold">Step 2:</span> Would you like to include special characters?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="special-char" id="special-char1" checked>
+                                <label class="form-check-label" for="special-char1">
+                                  Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="special-char" id="special-char2">
+                                <label class="form-check-label" for="special-char2">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col input-style">
+                            <p><span class="fw-bold">Step 3:</span> Would you like to include numbers?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="numbers" id="numbers1" checked>
+                                <label class="form-check-label" for="numbers1">
+                                  Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="numbers" id="numbers2">
+                                <label class="form-check-label" for="numbers2">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col input-style">
+                            <p><span class="fw-bold">Step 4:</span> Would you like to include lowercase letters?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="lowercase" id="lowercase1" checked>
+                                <label class="form-check-label" for="lowercase1">
+                                  Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="lowercase" id="lowercase2">
+                                <label class="form-check-label" for="lowercase2">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col input-style">
+                            <p><span class="fw-bold">Step 5:</span> Would you like to include uppercase letters?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="uppercase" id="uppercase1" checked>
+                                <label class="form-check-label" for="uppercase1">
+                                  Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="uppercase" id="uppercase2">
+                                <label class="form-check-label" for="uppercase2">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="mt-5">
+                    <div class="card-body">
+                        <textarea
+                            readonly
+                            id="password"
+                            placeholder="Your Secure Password"
+                            aria-label="Generated Password"
+                        ></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <button id="generate" class="rounded-5 bg-black text-white fw-bold my-2">Generate Password</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
