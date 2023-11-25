@@ -31,7 +31,7 @@ button:hover {
     background-color: var(--cream);
     text-align: left;
     min-height: 70vh;
-    padding: 100px 350px 100px 100px;
+    padding: 100px 350px 100px 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -126,11 +126,11 @@ button:hover {
 #password {
     display: block;
     width: 100%;
-    padding-top: 15px;
+    padding-top: 39px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 85px;
-    font-size: 1.2rem;
+    padding-bottom: 39px;
+    font-size: 55px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
