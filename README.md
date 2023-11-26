@@ -10,6 +10,9 @@ I want to give credit to Mahima Mahajan for her Dribbble design [here](https://d
 ![Password Generator](./assets/images/password-generator.png)
 View live project [here](https://leannecodes.github.io/vault-key-generator/)
 
+## Future Implementations
+- I would add a copy icon, that when you click it, it stores the most recent password string to the user's clipboard.
+
 ## Credits
 - Mahima Mahajan for her Dribbble design [here](https://dribbble.com/shots/20288725-MyPass-Password-Manager)
 - FontAwesome for the icons
