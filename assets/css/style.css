@@ -30,8 +30,7 @@ button:hover {
 .left {
     background-color: var(--cream);
     text-align: left;
-    min-height: 70vh;
-    padding-left: 100px !important;
+    min-height: fit-content;
 }
 
 .left h3 {
@@ -46,7 +45,7 @@ button:hover {
 
 .right {
     background-color: var(--green);
-    min-height: 70vh;
+    min-height: fit-content;
 }
 
 .hero-image {
@@ -104,7 +103,7 @@ button:hover {
     border-radius: 20px;
     border: 5px solid black;
     min-height: 500px;
-    padding: 100px;
+    /* padding: 100px; */
 }
 
 .input-style {
@@ -124,25 +123,19 @@ button:hover {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 39px;
-    font-size: 55px;
+    font-size: 40px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 2px dashed #c0c7cf;
     border-radius: 6px;
     resize: none;
-    overflow: hidden;
 }
 
 #generate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px !important;
     width: 30%;
-    margin: auto;
     height: 70px !important;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* footer */
