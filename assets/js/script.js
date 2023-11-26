@@ -92,7 +92,6 @@ var specialCharacters = [
   function getPasswordOptions() {
     // Prompt for password length
     var length = document.getElementById("length").value;
-    console.log(length);
   
     // Check if the length is a valid number
     /* 
@@ -118,8 +117,6 @@ var specialCharacters = [
         for (var i = 0; i < optionBtns.length; i++) {
             if (optionBtns[i].type === "radio" && optionBtns[i].checked) {
                 var labelElement = document.querySelector('label[for="' + optionBtns[i].id + '"]');
-                console.log(optionBtns[i].id);
-                console.log(labelElement.textContent);
                 optionValue = labelElement.innerHTML.trim() === "Yes";
                 break;
             }
@@ -132,11 +129,6 @@ var specialCharacters = [
     var numChar = getOptionValue("numbers");
     var lowerChar = getOptionValue("lowercase");
     var upperChar = getOptionValue("uppercase");
-    
-    console.log(specialChar);
-    console.log(numChar);
-    console.log(lowerChar);
-    console.log(upperChar);
   
     // Check if at least one character type is selected
     /*
@@ -165,8 +157,6 @@ var specialCharacters = [
       upperChar: upperChar
     };
   
-    console.log(passwordOptions);
-  
     return passwordOptions;
   }
   
@@ -186,7 +176,6 @@ var specialCharacters = [
   function generatePassword() {
     // accessing the passwordOptions object here
     var options = getPasswordOptions();
-    console.log(options);
   
     // Returns an empty string if options are not valid
     if (!options) {
@@ -232,8 +221,6 @@ var specialCharacters = [
       allCharacters = allCharacters.concat(upperCasedCharacters);
     }
   
-    console.log(allCharacters);
-  
     /*
       Now that we have all the characters that we want in our allCharacters array,
       we can pass this array as an argument into the getRandom function, which
@@ -245,8 +232,6 @@ var specialCharacters = [
       var randomChar = getRandom(allCharacters);
       passwordString += randomChar;
     }
-  
-    console.log(passwordString);
   
     return passwordString;
   }
