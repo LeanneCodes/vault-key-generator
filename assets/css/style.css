@@ -98,6 +98,13 @@ a:hover {
     flex-direction: column;
 }
 
+.fa-1, .fa-2, .fa-3, .fa-4, .fa-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .description {
     width: 70%;
 }
@@ -155,3 +162,22 @@ footer {
     background-color: var(--green);
     padding: 30px;
 }
+
+/* media queries */
+@media screen and (max-width: 430px) {
+    .form-control {
+        width: 100% !important;
+    }
+
+    #password {
+        font-size: 15px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav {
+        justify-content: center !important;
+    }
+  }
