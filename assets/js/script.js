@@ -264,3 +264,9 @@ var specialCharacters = [
   
   // Add event listener to generate button
   generateBtn.addEventListener('click', writePassword);
+
+  // Get the current year
+  var currentYear = new Date().getFullYear();
+
+  // Update the content of the paragraph with the id "currentYear"
+  document.getElementById("currentYear").textContent = "© VaultKey, Inc " + currentYear;
