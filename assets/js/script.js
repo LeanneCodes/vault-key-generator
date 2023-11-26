@@ -145,7 +145,7 @@ var specialCharacters = [
       nothing will be returned.
     */
     if (!specialChar && !numChar && !lowerChar && !upperChar) {
-      alert("Please select at least one character type. Click 'Generate Password' again.");
+      alert("Please select at least one character type and then click 'Generate Password' again.");
       return null;
     }
   

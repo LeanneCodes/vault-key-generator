@@ -26,6 +26,10 @@ button:hover {
     color: black !important;
 }
 
+a:hover {
+    color: black !important;
+}
+
 /* header */
 .left {
     background-color: var(--cream);
@@ -103,7 +107,12 @@ button:hover {
     border-radius: 20px;
     border: 5px solid black;
     min-height: 500px;
-    /* padding: 100px; */
+}
+
+.required::after {
+    content: ' *';
+    color: red;
+    display: inline;
 }
 
 .input-style {
