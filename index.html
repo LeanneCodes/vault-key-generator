@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/assets/images/vaultkey_favicon.png" type="image/x-icon">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/7ac16726b9.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Vault Key</title>
+    <style>
+        #password-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        #password {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <!-- navbar -->
@@ -159,14 +171,15 @@
                     </div>
                 </form>
                 <div class="mt-5">
-                    <div class="card-body">
+                    <div id="password-container">
                         <textarea
                             readonly
                             id="password"
                             placeholder="Your Secure Password"
                             aria-label="Generated Password"
-                            class="overflow-auto"
+                            class="overflow-auto form-control"
                         ></textarea>
+                        <span class="copy-icon copyIcon" id="copy-icon"><i class="fa-solid fa-copy"></i></span>
                     </div>
                     <div class="card-footer">
                         <button id="generate" class="rounded-5 bg-black text-white fw-bold mt-5 d-flex justify-content-center align-items-center mx-auto w-100">Generate Password</button>
@@ -188,6 +201,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <!-- JS -->
-    <script src="./assets/js/script.js"></script>
+     <script src="assets/js/script.js"></script>
 </body>
 </html>
