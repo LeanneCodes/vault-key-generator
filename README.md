@@ -1,6 +1,6 @@
-# VaultKey - A Password Generator Application
+# VaultKey - A Password Generator Application [Live Link](https://leannecodes.github.io/vault-key-generator/)
 
-Building on my last password generator app, see GitHub code [here](https://github.com/LeanneCodes/password-generator) and live project [here](https://leannecodes.github.io/password-generator/), I wanted to improve on the user interface and make it look like a real-world application.
+Building on my last password generator app, see GitHub code [here](https://github.com/LeanneCodes/password-generator), I wanted to improve on the user interface and make it look like a real-world application.
 
 The app provides step-by-step instructions for users, starting with guidance on navigating its features. Users are prompted to set a password length, ranging from 8 to 128 characters, and to select the specific types of characters they want to include. Upon clicking "Generate Password," a unique character string is generated on the screen, ready for users to copy and utilise for personal or professional purposes.
 
@@ -12,6 +12,10 @@ View live project [here](https://leannecodes.github.io/vault-key-generator/)
 
 ## Future Implementations
 - I would add a copy icon, that when you click it, it stores the most recent password string to the user's clipboard.
+
+## Updates
+- I have added the functionality of a clipboard
+- When the user clicks on the clipboard after generating a password, the password is savaed locally to memory
 
 ## Credits
 - Mahima Mahajan for her Dribbble design [here](https://dribbble.com/shots/20288725-MyPass-Password-Manager)
